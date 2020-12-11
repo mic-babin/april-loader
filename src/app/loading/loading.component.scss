@@ -1,0 +1,253 @@
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+
+  // ======== Configuration Number 1 =========
+  // =========================================
+
+  #animation1 {
+    position: absolute;
+    .buble1 {
+      content: "";
+      position: absolute;
+      left: -100px;
+      top: 0px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      // opacity: 0;
+      // transform: scale(0);
+      border-bottom-right-radius: 0;
+      background-color: #c9d200;
+      animation-name: animation1c;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+    .buble2 {
+      content: "";
+      position: absolute;
+      left: -50px;
+      top: 0px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border-top-left-radius: 0;
+      // opacity: 0;
+      // transform: scale(0);
+      background-color: #f49e00;
+      animation-name: animation1c;
+      animation-duration: 2s;
+      animation-delay: 0.25s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+    .buble3 {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border-top-right-radius: 0;
+      // opacity: 0;
+      // transform: scale(0);
+      background-color: #ea5160;
+      animation-name: animation1c;
+      animation-duration: 2s;
+      animation-delay: 0.5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+    .buble4 {
+      content: "";
+      position: absolute;
+      left: 50px;
+      top: 0px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border-bottom-left-radius: 0;
+      // opacity: 0;
+      // transform: scale(0);
+      background-color: #722483;
+      animation-name: animation1c;
+      animation-duration: 2s;
+      animation-delay: 0.75s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+  }
+}
+
+// ======== Configuration Number 2 =========
+// =========================================
+
+//   #animation1 {
+//     transform: rotate(45deg);
+//     position: absolute;
+//     .buble1 {
+//       content: "";
+//       position: absolute;
+//       left: -42px;
+//       top: -42px;
+//       width: 42px;
+//       height: 42px;
+//       border-radius: 50%;
+//       // opacity: 0;
+//       transform: scale(0);
+//       border-bottom-right-radius: 0;
+//       background-color: #c9d200;
+//       animation-name: animation2a;
+//       animation-duration: 2s;
+//       animation-iteration-count: infinite;
+//       animation-timing-function: ease-in-out;
+//     }
+//     .buble2 {
+//       content: "";
+//       position: absolute;
+//       left: 0px;
+//       top: -42px;
+//       width: 42px;
+//       height: 42px;
+//       border-radius: 50%;
+//       border-bottom-left-radius: 0;
+//       // opacity: 0;
+//       transform: scale(0);
+//       background-color: #f49e00;
+//       animation-name: animation2a;
+//       animation-duration: 2s;
+//       animation-delay: 0.25s;
+//       animation-iteration-count: infinite;
+//       animation-timing-function: ease-in-out;
+//     }
+//     .buble3 {
+//       content: "";
+//       position: absolute;
+//       left: 0px;
+//       top: 0px;
+//       width: 42px;
+//       height: 42px;
+//       border-radius: 50%;
+//       border-top-left-radius: 0;
+//       // opacity: 0;
+//       transform: scale(0);
+//       background-color: #ea5160;
+//       animation-name: animation2a;
+//       animation-duration: 2s;
+//       animation-delay: 0.5s;
+//       animation-iteration-count: infinite;
+//       animation-timing-function: ease-in-out;
+//     }
+//     .buble4 {
+//       content: "";
+//       position: absolute;
+//       left: -42px;
+//       top: 0px;
+//       width: 42px;
+//       height: 42px;
+//       border-radius: 50%;
+//       border-top-right-radius: 0;
+//       // opacity: 0;
+//       transform: scale(0);
+//       background-color: #65c4db;
+//       animation-name: animation2a;
+//       animation-duration: 2s;
+//       animation-delay: 0.75s;
+//       animation-iteration-count: infinite;
+//       animation-timing-function: ease-in-out;
+//     }
+//   }
+// }
+
+@keyframes animation1a {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes animation1b {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  29% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0);
+  }
+}
+
+@keyframes animation1c {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-30px);
+  }
+  66% {
+    transform: translateY(0);
+  }
+}
+
+// ======== Opiton 2 =========
+
+@keyframes animation2a {
+  0% {
+    transform: scale(0);
+  }
+  // 33% {
+  //   transform: scale(1.1);
+  // }
+  20% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(0);
+  }
+}
+
+@keyframes animation2b {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
