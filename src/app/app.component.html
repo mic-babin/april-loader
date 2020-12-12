@@ -1,6 +1,9 @@
 <div class="fullscreenCentered">
-  <button class="btn btn-outline-danger" (click)="onShowingLoader()">
+  <button
+    class="btn btn-outline-danger button-loading"
+    (click)="toggleLoading()"
+  >
     Simulate Loading
   </button>
-  <app-loading [isLoading]="isLoading"></app-loading>
+  <app-loading></app-loading>
 </div>
