@@ -10,164 +10,148 @@
   width: 100%;
   z-index: 99999;
 
-  // ======== Configuration Number 1 =========
+  //   // ======== Configuration Number 1 =========
+  //   // =========================================
+
+  //   #animation1 {
+  //     position: absolute;
+  //     .buble {
+  //       content: "";
+  //       position: absolute;
+  //       width: 42px;
+  //       height: 42px;
+  //       border-radius: 50%;
+  //       // opacity: 0;
+  //       // transform: scale(0);
+  //       animation: animation1c 2s ease-in-out infinite;
+  //     }
+  //     .buble1 {
+  //       left: -100px;
+  //       top: 0px;
+  //       border-bottom-right-radius: 0;
+  //       background-color: #c9d200;
+  //     }
+  //     .buble2 {
+  //       left: -50px;
+  //       top: 0px;
+  //       border-top-left-radius: 0;
+  //       background-color: #f49e00;
+  //       animation-delay: 0.25s;
+  //     }
+  //     .buble3 {
+  //       left: 0px;
+  //       top: 0px;
+  //       border-top-right-radius: 0;
+  //       background-color: #ea5160;
+  //       animation-delay: 0.5s;
+  //     }
+  //     .buble4 {
+  //       left: 50px;
+  //       top: 0px;
+  //       border-bottom-left-radius: 0;
+  //       background-color: #722483;
+  //       animation-delay: 0.75s;
+  //     }
+  //   }
+  // }
+
+  // ======== Configuration Number 2 =========
+  // =========================================
+
+  //   #animation1 {
+  //     transform: rotate(45deg);
+  //     position: absolute;
+
+  //     .buble {
+  //       content: "";
+  //       position: absolute;
+  //       width: 42px;
+  //       height: 42px;
+  //       border-radius: 50%;
+  //       // opacity: 0;
+  //       transform: scale(0);
+  //       animation: animation2a 2s ease-in-out infinite;
+  //     }
+  //     .buble1 {
+  //       left: -42px;
+  //       top: -42px;
+  //       border-bottom-right-radius: 0;
+  //       background-color: #c9d200;
+  //     }
+  //     .buble2 {
+  //       left: 0px;
+  //       top: -42px;
+  //       border-bottom-left-radius: 0;
+  //       background-color: #f49e00;
+  //       animation-delay: 0.25s;
+  //     }
+  //     .buble3 {
+  //       left: 0px;
+  //       top: 0px;
+  //       border-top-left-radius: 0;
+  //       background-color: #ea5160;
+  //       animation-delay: 0.5s;
+  //     }
+  //     .buble4 {
+  //       left: -42px;
+  //       top: 0px;
+  //       border-top-right-radius: 0;
+  //       background-color: #65c4db;
+  //       animation-delay: 0.75s;
+  //     }
+  //   }
+  // }
+
+  // ======== Configuration Number 3 =========
   // =========================================
 
   #animation1 {
+    transform: rotate(45deg);
     position: absolute;
-    .buble1 {
+    animation: animation3a1 3s linear 1.5s infinite forwards;
+
+    .buble {
       content: "";
       position: absolute;
-      left: -100px;
-      top: 0px;
       width: 42px;
       height: 42px;
       border-radius: 50%;
-      // opacity: 0;
-      // transform: scale(0);
+      opacity: 0;
+      animation: 12s ease-in-out infinite;
+    }
+    .buble1 {
+      left: -42px;
+      top: -42px;
       border-bottom-right-radius: 0;
       background-color: #c9d200;
-      animation-name: animation1c;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
+      animation-name: animation3b1;
     }
     .buble2 {
-      content: "";
-      position: absolute;
-      left: -50px;
-      top: 0px;
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      border-top-left-radius: 0;
-      // opacity: 0;
-      // transform: scale(0);
+      left: 0px;
+      top: -42px;
+      border-bottom-left-radius: 0;
       background-color: #f49e00;
-      animation-name: animation1c;
-      animation-duration: 2s;
+      animation-name: animation3b2;
       animation-delay: 0.25s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
     }
     .buble3 {
-      content: "";
-      position: absolute;
       left: 0px;
       top: 0px;
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      border-top-right-radius: 0;
-      // opacity: 0;
-      // transform: scale(0);
+      border-top-left-radius: 0;
       background-color: #ea5160;
-      animation-name: animation1c;
-      animation-duration: 2s;
+      animation-name: animation3b3;
       animation-delay: 0.5s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
     }
     .buble4 {
-      content: "";
-      position: absolute;
-      left: 50px;
+      left: -42px;
       top: 0px;
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      border-bottom-left-radius: 0;
-      // opacity: 0;
-      // transform: scale(0);
-      background-color: #722483;
-      animation-name: animation1c;
-      animation-duration: 2s;
+      border-top-right-radius: 0;
+      background-color: #65c4db;
+      animation-name: animation3b4;
       animation-delay: 0.75s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
     }
   }
 }
-
-// ======== Configuration Number 2 =========
-// =========================================
-
-//   #animation1 {
-//     transform: rotate(45deg);
-//     position: absolute;
-//     .buble1 {
-//       content: "";
-//       position: absolute;
-//       left: -42px;
-//       top: -42px;
-//       width: 42px;
-//       height: 42px;
-//       border-radius: 50%;
-//       // opacity: 0;
-//       transform: scale(0);
-//       border-bottom-right-radius: 0;
-//       background-color: #c9d200;
-//       animation-name: animation2a;
-//       animation-duration: 2s;
-//       animation-iteration-count: infinite;
-//       animation-timing-function: ease-in-out;
-//     }
-//     .buble2 {
-//       content: "";
-//       position: absolute;
-//       left: 0px;
-//       top: -42px;
-//       width: 42px;
-//       height: 42px;
-//       border-radius: 50%;
-//       border-bottom-left-radius: 0;
-//       // opacity: 0;
-//       transform: scale(0);
-//       background-color: #f49e00;
-//       animation-name: animation2a;
-//       animation-duration: 2s;
-//       animation-delay: 0.25s;
-//       animation-iteration-count: infinite;
-//       animation-timing-function: ease-in-out;
-//     }
-//     .buble3 {
-//       content: "";
-//       position: absolute;
-//       left: 0px;
-//       top: 0px;
-//       width: 42px;
-//       height: 42px;
-//       border-radius: 50%;
-//       border-top-left-radius: 0;
-//       // opacity: 0;
-//       transform: scale(0);
-//       background-color: #ea5160;
-//       animation-name: animation2a;
-//       animation-duration: 2s;
-//       animation-delay: 0.5s;
-//       animation-iteration-count: infinite;
-//       animation-timing-function: ease-in-out;
-//     }
-//     .buble4 {
-//       content: "";
-//       position: absolute;
-//       left: -42px;
-//       top: 0px;
-//       width: 42px;
-//       height: 42px;
-//       border-radius: 50%;
-//       border-top-right-radius: 0;
-//       // opacity: 0;
-//       transform: scale(0);
-//       background-color: #65c4db;
-//       animation-name: animation2a;
-//       animation-duration: 2s;
-//       animation-delay: 0.75s;
-//       animation-iteration-count: infinite;
-//       animation-timing-function: ease-in-out;
-//     }
-//   }
-// }
 
 @keyframes animation1a {
   0% {
@@ -221,9 +205,6 @@
   0% {
     transform: scale(0);
   }
-  // 33% {
-  //   transform: scale(1.1);
-  // }
   20% {
     transform: scale(1);
   }
@@ -249,5 +230,71 @@
   }
   75% {
     opacity: 0;
+  }
+}
+
+// Option 3
+@keyframes animation3b1 {
+  0% {
+    opacity: 0;
+    transform: translate(-25px, -25px) scale(1.2);
+  }
+  5% {
+    opacity: 1;
+    transform: translate(0px, 0px) scale(1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation3b2 {
+  0% {
+    opacity: 0;
+    transform: translate(25px, -25px) scale(1.2);
+  }
+  5% {
+    opacity: 1;
+    transform: translate(0px, 0px) scale(1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation3b3 {
+  0% {
+    opacity: 0;
+    transform: translate(25px, 25px) scale(1.2);
+  }
+  5% {
+    opacity: 1;
+    transform: translate(0px, 0px) scale(1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation3b4 {
+  0% {
+    opacity: 0;
+    transform: translate(-25px, 25px) scale(1.2);
+  }
+  5% {
+    opacity: 1;
+    transform: translate(0px, 0px) scale(1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animation3a1 {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(405deg);
   }
 }
