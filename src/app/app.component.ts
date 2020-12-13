@@ -12,10 +12,19 @@ export class AppComponent implements OnInit {
 
   constructor(private loader: LoadingService) {}
 
+  timer: any;
   toggleLoading() {
     this.isLoading = !this.isLoading;
-    this.loader.loading(this.isLoading);
-    setTimeout(() => this.loader.loading(false), 5000);
+    if (this.isLoading === false) {
+      this.loader.loading(this.isLoading);
+      clearTimeout(this.timer);
+    } else {
+      this.loader.loading(this.isLoading);
+      this.timer = setTimeout(() => {
+        this.isLoading = false;
+        this.loader.loading(this.isLoading);
+      }, 5000);
+    }
   }
 
   ngOnInit() {}
